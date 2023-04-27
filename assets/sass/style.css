@@ -1,0 +1,289 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --cor-principal: #0a3871;
+  --cor-secundaria: #d8dfe8;
+  --cor-fundo: #f3f5fc;
+  --branco: #ffffff;
+  --info-texto: #495057;
+  --titulo: #343a40;
+}
+
+body {
+  background-color: var(--cor-fundo);
+}
+
+.logo-img {
+  margin: 40px 84px 0px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
+}
+/* ========== ENTRADA DE TEXTO ========*/
+.entrada-texto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.entrada-textarea {
+  width: 680px;
+  height: 550px;
+  outline: 0px;
+  border: none;
+  background-color: var(--cor-fundo);
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--cor-principal);
+  resize: none;
+}
+
+.entrada-textarea::placeholder {
+  color: var(--cor-principal);
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+/* ========== INFORMAÇÃO ========*/
+
+.icon-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.icon-texto {
+  font-size: 12px;
+  color: var(--info-texto);
+  line-height: 150%;
+}
+
+/* ========== BOTÕES ========*/
+
+.button-container {
+  display: flex;
+  margin-top: 16px;
+  gap: 24px;
+}
+
+.button-cripto,
+.button-descripto,
+.button-copy {
+  width: 328px;
+  height: 67px;
+  border-radius: 24px;
+  font-size: 16px;
+}
+.button-cripto {
+  background-color: var(--cor-principal);
+  border: none;
+  color: var(--branco);
+}
+
+.button-descripto {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-principal);
+  border: 1px solid var(--cor-principal);
+}
+
+/* ========== SAÍDA DE TEXTO ========*/
+
+.saida-texto {
+  background-color: var(--branco);
+  /*   margin-top: -133px; */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  width: 400px;
+  height: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-container {
+  display: flex;
+  width: 336px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.img-container > h1 {
+  color: var(--titulo);
+  margin: 32px 0px 16px;
+}
+
+.img-container > p {
+  color: var(--info-texto);
+  font-size: 16px;
+}
+
+.button-copy {
+  display: none;
+  color: var(--cor-principal);
+  background-color: var(--branco);
+  border: 1px solid var(--cor-principal);
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  height: 53px;
+  gap: 16px;
+}
+
+.icon-redes-sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3px;
+  gap: 8px;
+}
+.icon-git,
+.icon-linkedin {
+  width: 16px;
+  height: 16px;
+}
+
+/* ========== RESPONSIVIDADE ========*/
+
+@media (min-width: 375px) and (max-width: 700px) {
+  .logo-img {
+    margin: 24px 0px 24px 16px;
+  }
+  .main-container {
+    gap: 34px;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .entrada-textarea {
+    width: 343px;
+    height: auto;
+  }
+
+  .img-busca {
+    display: none;
+  }
+
+  .saida-texto {
+    width: 327px;
+    height: auto;
+  }
+
+  .img-container > h1 {
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  .img-container {
+    margin: 32px;
+    gap: 16px;
+  }
+
+  .button-copy {
+    display: none;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1400px) {
+  .main-container {
+    gap: 40px;
+  }
+
+  .entrada-textarea {
+    width: 688px;
+    height: 475px;
+  }
+
+  .saida-texto {
+    width: 688px;
+    height: 200px;
+  }
+
+  .img-container {
+    width: 624px;
+  }
+
+  .img-container > h1 {
+    color: var(--titulo);
+    margin: 0px;
+  }
+
+  .img-busca {
+    display: none;
+  }
+
+  .button-copy {
+    display: none;
+    width: 280px;
+    height: 50px;
+  }
+}
+
+/* ========== MODO DARK ========*/
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #161618;
+  }
+
+  .logo-img {
+    filter: invert(49%) sepia(99%) saturate(862%) hue-rotate(187deg)
+      brightness(85%) contrast(96%);
+  }
+
+  .entrada-textarea {
+    background-color: #161618;
+    color: #3f88d4;
+  }
+
+  .entrada-textarea::placeholder {
+    color: #3f88d4;
+  }
+
+  .icon-img {
+    filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(179deg)
+      brightness(91%) contrast(94%);
+  }
+
+  .icon-texto {
+    color: #a7a7a7;
+  }
+
+  .saida-texto {
+    background-color: #1e1e1e;
+  }
+
+  .img-container > h1,
+  .img-container > p {
+    color: #e5e5e5;
+  }
+
+  .rodape {
+    color: #e5e5e5;
+  }
+
+  .icon-git,
+  .icon-linkedin {
+    filter: invert(62%) sepia(11%) saturate(7082%) hue-rotate(179deg)
+      brightness(71%) contrast(98%);
+  }
+}
