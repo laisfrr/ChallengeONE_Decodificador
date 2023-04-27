@@ -101,7 +101,6 @@ body {
 
 .saida-texto {
   background-color: var(--branco);
-  /*   margin-top: -133px; */
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
   width: 400px;
@@ -117,6 +116,8 @@ body {
   width: 336px;
   flex-direction: column;
   text-align: center;
+  visibility: visible;
+  position: absolute;
 }
 
 .img-container > h1 {
@@ -129,11 +130,23 @@ body {
   font-size: 16px;
 }
 
-.button-copy {
+.container-texto {
   display: none;
+  width: 350px;
+  height: 100vh;
+  padding-top: 20px;
+  word-break: break-all;
+  font-size: 24px;
+  color: var(--cor-secundaria);
+}
+
+.button-copy {
+  /* display: block; */
+  visibility: hidden;
   color: var(--cor-principal);
   background-color: var(--branco);
   border: 1px solid var(--cor-principal);
+  margin-bottom: 12px;
 }
 
 .rodape {
@@ -181,9 +194,17 @@ body {
     display: none;
   }
 
+  .container-texto {
+    width: 300px;
+    padding-top: 0px;
+    height: 100vh;
+    padding-top: 10px;
+    overflow-y: scroll;
+  }
+
   .saida-texto {
     width: 327px;
-    height: auto;
+    height: 300px;
   }
 
   .img-container > h1 {
@@ -194,12 +215,15 @@ body {
   .img-container {
     margin: 32px;
     gap: 16px;
+    position: inherit;
+    position: absolute;
   }
 
   .button-copy {
-    display: none;
+    visibility: hidden;
     width: 250px;
-    height: 50px;
+    height: 200px;
+    margin-top: 16px;
     margin-bottom: 16px;
   }
 }
@@ -216,7 +240,13 @@ body {
 
   .saida-texto {
     width: 688px;
-    height: 200px;
+    height: 300px;
+  }
+
+  .container-texto {
+    width: 650px;
+    height: 100vh;
+    overflow-y: scroll;
   }
 
   .img-container {
@@ -233,9 +263,10 @@ body {
   }
 
   .button-copy {
-    display: none;
+    visibility: hidden;
     width: 280px;
-    height: 50px;
+    height: 250px;
+    margin: 10px 0px 12px 0px;
   }
 }
 
@@ -270,6 +301,10 @@ body {
 
   .saida-texto {
     background-color: #1e1e1e;
+  }
+
+  .texto-criptografado {
+    color: var(--cor-secundaria);
   }
 
   .img-container > h1,

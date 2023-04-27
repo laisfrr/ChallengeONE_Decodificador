@@ -29,17 +29,18 @@
         <span class="icon-texto">Apenas letras minúsculas e sem acento.</span>
       </div>
       <div class="button-container">
-        <button class="button-cripto">Criptografar</button>
-        <button class="button-descripto">Descriptografar</button>
+        <button class="button-cripto" onclick="criptografar()">Criptografar</button>
+        <button class="button-descripto" onclick="descriptografar()">Descriptografar</button>
       </div>
     </section>
     <section class="saida-texto">
+      <div class="container-texto" id="texto"></div>
       <div class="img-container">
         <img class="img-busca" src="./assets/img/imagem-lupa.svg" alt="">
         <h1>Nenhuma mensagem encontrada</h1>
         <p>Digite um texto que você deseja criptografar ou Descriptografar.</p>
       </div>
-      <button class="button-copy">Copiar</button>
+      <button class="button-copy" onclick="copiar()">Copiar</button>
     </section>
 
   </main>
