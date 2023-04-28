@@ -6,9 +6,9 @@ var criptografiaBotao = document.querySelector('.button-cripto')
 function criptografar() {
   var textoRecebido = entradaTexto.value.toLowerCase()
   textoCripto = textoRecebido
-    .replace(/a/g, 'ai')
     .replace(/e/g, 'enter')
     .replace(/i/g, 'imes')
+    .replace(/a/g, 'ai')
     .replace(/o/g, 'ober')
     .replace(/u/g, 'ufat')
   var img = document.querySelector('.img-container')
@@ -25,9 +25,9 @@ function criptografar() {
 function descriptografar() {
   var textoRecebido = entradaTexto.value.toLowerCase()
   textoCripto = textoRecebido
-    .replace(/ai/g, 'a')
     .replace(/enter/g, 'e')
     .replace(/imes/g, 'i')
+    .replace(/ai/g, 'a')
     .replace(/ober/g, 'o')
     .replace(/ufat/g, 'u')
   var img = document.querySelector('.img-container')
