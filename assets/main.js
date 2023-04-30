@@ -18,7 +18,6 @@ function criptografar() {
   img.style.visibility = 'hidden'
   copy.style.visibility = 'inherit'
   texto.style.display = 'block'
-  console.log(textoRecebido)
   return
 }
 
@@ -37,12 +36,12 @@ function descriptografar() {
   img.style.visibility = 'hidden'
   copy.style.visibility = 'inherit'
   texto.style.display = 'block'
-  console.log(textoRecebido)
   return
 }
 
 function copiar() {
   var copy = navigator.clipboard.writeText(textoCripto)
+  alert('Texto copiado: ' + textoCripto)
   clear()
 }
 

@@ -89,12 +89,28 @@ body {
   background-color: var(--cor-principal);
   border: none;
   color: var(--branco);
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.button-cripto:hover {
+  background-color: #0d478e;
+  width: 335px;
+  height: 76px;
 }
 
 .button-descripto {
   background-color: var(--cor-secundaria);
   color: var(--cor-principal);
   border: 1px solid var(--cor-principal);
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.button-descripto:hover {
+  background-color: #fdfdfd;
+  width: 335px;
+  height: 76px;
 }
 
 /* ========== SAÍDA DE TEXTO ========*/
@@ -147,6 +163,7 @@ body {
   background-color: var(--branco);
   border: 1px solid var(--cor-principal);
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .rodape {
@@ -225,6 +242,7 @@ body {
     height: 200px;
     margin-top: 16px;
     margin-bottom: 16px;
+    cursor: pointer;
   }
 }
 
