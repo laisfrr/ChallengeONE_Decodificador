@@ -159,7 +159,7 @@ body {
   padding-top: 20px;
   word-break: break-all;
   font-size: 24px;
-  color: var(--cor-secundaria);
+  color: var(--cor-principal);
 }
 
 .button-copy {
