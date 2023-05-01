@@ -43,6 +43,8 @@ function copiar() {
   var copy = navigator.clipboard.writeText(textoCripto)
   alert('Texto copiado: ' + textoCripto)
   clear()
+  entradaTexto.select()
+  entradaTexto.setSelectionRange(0, 99999)
 }
 
 function clear() {
