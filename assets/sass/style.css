@@ -85,6 +85,12 @@ body {
   border-radius: 24px;
   font-size: 16px;
 }
+
+.button-copy:hover {
+  width: 308px;
+  height: 77px;
+  transition: all 0.6s;
+}
 .button-cripto {
   background-color: var(--cor-principal);
   border: none;
@@ -170,7 +176,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   height: 53px;
   gap: 16px;
 }
@@ -180,12 +186,15 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 3px;
-  gap: 8px;
+  gap: 18px;
 }
-.icon-git,
-.icon-linkedin {
+.icon-git {
   width: 16px;
   height: 16px;
+}
+.icon-linkedin {
+  width: 20px;
+  height: 20px;
 }
 
 /* ========== RESPONSIVIDADE ========*/
