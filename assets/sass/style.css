@@ -330,6 +330,10 @@ body {
     background-color: #1e1e1e;
   }
 
+  .container-texto {
+    color: #3f88d4;
+  }
+
   .texto-criptografado {
     color: var(--cor-secundaria);
   }
