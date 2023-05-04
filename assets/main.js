@@ -1,6 +1,7 @@
+new window.VLibras.Widget('https://vlibras.gov.br/app')
+
 var entradaTexto = document.querySelector('.entrada-textarea')
 var textoRecebido = entradaTexto.value
-
 var criptografiaBotao = document.querySelector('.button-cripto')
 
 function criptografar() {
@@ -11,15 +12,29 @@ function criptografar() {
     .replace(/a/g, 'ai')
     .replace(/o/g, 'ober')
     .replace(/u/g, 'ufat')
-  var img = document.querySelector('.img-container')
-  var copy = document.querySelector('.button-copy')
-  var texto = document.querySelector('.container-texto')
-  document.querySelector('.container-texto').innerHTML = textoCripto
-  img.style.visibility = 'hidden'
-  copy.style.visibility = 'inherit'
-  texto.style.display = 'block'
+  if (validar(entradaTexto.value)) {
+    var erroValidacao = document.querySelector('.icon-texto')
+    erroValidacao.style.border = '1px dashed red'
+    clear()
+  } else {
+    var erroValidacao = document.querySelector('.icon-texto')
+    erroValidacao.style.border = 'none'
+    var img = document.querySelector('.img-container')
+    var copy = document.querySelector('.button-copy')
+    var texto = document.querySelector('.container-texto')
+    document.querySelector('.container-texto').innerHTML = textoCripto
+    img.style.visibility = 'hidden'
+    copy.style.visibility = 'inherit'
+    texto.style.display = 'block'
+  }
   return
 }
+
+function validar(entradaTexto) {
+  var regex = /[A-Zà-ú]/g
+  return regex.test(entradaTexto)
+}
+console.log(validar(entradaTexto.value))
 
 function descriptografar() {
   var textoRecebido = entradaTexto.value.toLowerCase()
@@ -29,13 +44,20 @@ function descriptografar() {
     .replace(/ai/g, 'a')
     .replace(/ober/g, 'o')
     .replace(/ufat/g, 'u')
-  var img = document.querySelector('.img-container')
-  var copy = document.querySelector('.button-copy')
-  var texto = document.querySelector('.container-texto')
-  document.querySelector('.container-texto').innerHTML = textoCripto
-  img.style.visibility = 'hidden'
-  copy.style.visibility = 'inherit'
-  texto.style.display = 'block'
+  if (validar(entradaTexto.value)) {
+    var erroValidacao = document.querySelector('.icon-texto')
+    erroValidacao.style.border = '1px dashed red'
+  } else {
+    var erroValidacao = document.querySelector('.icon-texto')
+    erroValidacao.style.border = 'none'
+    var img = document.querySelector('.img-container')
+    var copy = document.querySelector('.button-copy')
+    var texto = document.querySelector('.container-texto')
+    document.querySelector('.container-texto').innerHTML = textoCripto
+    img.style.visibility = 'hidden'
+    copy.style.visibility = 'inherit'
+    texto.style.display = 'block'
+  }
   return
 }
 
@@ -43,8 +65,6 @@ function copiar() {
   var copy = navigator.clipboard.writeText(textoCripto)
   alert('Texto copiado: ' + textoCripto)
   clear()
-  entradaTexto.select()
-  entradaTexto.setSelectionRange(0, 99999)
 }
 
 function clear() {
@@ -56,4 +76,6 @@ function clear() {
   copy.style.visibility = 'hidden'
   texto.style.display = 'none'
   document.querySelector('.container-texto').innerHTML = ''
+  entradaTexto.select()
+  entradaTexto.setSelectionRange(0, 99999)
 }
