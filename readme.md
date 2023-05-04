@@ -29,6 +29,7 @@
   <li> Responsividade para telas (min 375px e max 1400px);📱 🖥</li>
   <li> Modo dark (de acordo com a preferência do seu navegador);</li>
   <li> Botão para copiar o seu texto;</li>
+  <li>Vlibras para acessibilidade;👐</li>
 </ul>
 
 ---
@@ -46,7 +47,7 @@
 - Aplicar responsividade
 - Alinhar elementos com flexbox
 - Utilizar DOM (javaScript)
-- Funções
+- Funções e validações de texto
 
 ---
 
