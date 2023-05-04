@@ -1,23 +1,25 @@
-<h1 align="center">
+<h1 align="left">
+<img align="left" height="250px" src="./assets/img/Badge_Challenge.png" title="Badge do desafio concluído" />
   <br>🔐 | 1º CHALLENGE ONE ORACLE - Turma 5
 </h1>
 
-<h4 align="center">
+  <h4 align="left">
   Site feito para o 1º Desafio do programa ORACLE NEXT EDUCATION (ONE), onde pedia para que fosse feita uma página de criptografia e descriptografia de textos, com botão de copiar. 
-</h4>
+  </h4>
 
 ---
 
-<h3>VERSÃO WEB</h3>
-
-![Resultado final do projeto](./assets/img/web.png)
+<h3 align="left">VERSÃO WEB</h3>
+<p align="left">
+  <img height="350px" src="./assets/img/web.png" />
+</p>
 
 ---
 
 <h3>VERSÃO MOBILE</h3>
 
 <p align="center">
-  <img height="800px" src="./assets/img/mobile.png" />
+  <img height="600px" src="./assets/img/mobile.png" />
 </p>
 
 ---
