@@ -1,9 +1,11 @@
+//=======Script para o Vlibras ======//
 new window.VLibras.Widget('https://vlibras.gov.br/app')
 
 var entradaTexto = document.querySelector('.entrada-textarea')
 var textoRecebido = entradaTexto.value
 var criptografiaBotao = document.querySelector('.button-cripto')
 
+//=======Função do botão criptografia ======//
 function criptografar() {
   var textoRecebido = entradaTexto.value.toLowerCase()
   textoCripto = textoRecebido
@@ -30,12 +32,14 @@ function criptografar() {
   return
 }
 
+//=======Função com REGEX para validar o texto digitado ======//
 function validar(entradaTexto) {
-  var regex = /[A-Zà-ú]/g
+  var regex = /[A-Zà-ú@#$%^&*()+=!~:/]/g
   return regex.test(entradaTexto)
 }
 console.log(validar(entradaTexto.value))
 
+//=======Função do botão descriptografar ======//
 function descriptografar() {
   var textoRecebido = entradaTexto.value.toLowerCase()
   textoCripto = textoRecebido
@@ -47,6 +51,7 @@ function descriptografar() {
   if (validar(entradaTexto.value)) {
     var erroValidacao = document.querySelector('.icon-texto')
     erroValidacao.style.border = '1px dashed red'
+    clear()
   } else {
     var erroValidacao = document.querySelector('.icon-texto')
     erroValidacao.style.border = 'none'
@@ -61,12 +66,15 @@ function descriptografar() {
   return
 }
 
+//=======Função do botão copiar ======//
+
 function copiar() {
   var copy = navigator.clipboard.writeText(textoCripto)
   alert('Texto copiado: ' + textoCripto)
   clear()
 }
 
+//=======Função para limpar ======//
 function clear() {
   var img = document.querySelector('.img-container')
   var copy = document.querySelector('.button-copy')
