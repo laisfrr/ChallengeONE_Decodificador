@@ -25,6 +25,16 @@
 
 ---
 
+## 👉 Como usar?
+
+<ul>
+  <li> Você coloca o texto que deseja manipular</li>
+  <li> Clica em um dos botões abaixo para Criptografar ou Descriptografar</li>
+  <li> Na caixa ao lado vai aparecer o seu texto da forma que você escolheu</li>
+</ul>
+
+---
+
 ## ✅ O site é composto por :
 
 <ul>
