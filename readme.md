@@ -3,9 +3,10 @@
   <br>🔐 | 1º CHALLENGE ONE ORACLE - Turma 5
 </h1>
 
-  <h4 align="left">
-  Site feito para o 1º Desafio do programa ORACLE NEXT EDUCATION (ONE), onde pedia para que fosse feita uma página de criptografia e descriptografia de textos, com botão de copiar. 
-  </h4>
+  ## O que é?
+  - Site feito para o 1º Desafio do programa ORACLE NEXT EDUCATION (ONE).
+  - Uma página de criptografia e descriptografia de textos, com botão de copiar. 
+  
 
 ---
 
