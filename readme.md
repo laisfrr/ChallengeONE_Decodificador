@@ -1,5 +1,5 @@
 <h1 align="left">
-<img align="left" height="250px" src="./assets/img/Badge_Challenge.png" title="Badge do desafio concluído" />
+<img align="left" height="260px" src="./assets/img/Badge_Challenge.png" title="Badge do desafio concluído" />
   <br>🔐 | 1º CHALLENGE ONE ORACLE - Turma 5
 </h1>
 
